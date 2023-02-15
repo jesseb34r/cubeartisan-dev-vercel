@@ -7,6 +7,7 @@ export const footer = style({
   justifyContent: 'center',
   backgroundColor: vars.color.neutral2,
   paddingBlock: vars.space.gutter,
+  borderTop: `1px solid ${vars.color.neutral12}`,
 });
 
 export const contentContainer = style({

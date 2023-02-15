@@ -12,7 +12,7 @@ export const navContainer = style({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
-  width: vars.size['content-90'],
+  width: vars.size['content-80'],
   height: vars.size.xs,
 });
 
