@@ -1,0 +1,85 @@
+{
+	// Place your cubeartisan workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+  "Extend Base Component": {
+    "scope": "typescriptreact",
+    "prefix": "exc",
+    "body": [
+      "const $1: Component<ComponentProps<typeof Base$2>> = (props) => {",
+      "  const [local, others] = splitProps(props, ['class']);",
+      "",
+      "  return <Base$2 class={clsx(styles$3, local.class)} {...others} />;",
+      "};",
+      "",
+    ]
+  },
+
+   "Extend Base ParentComponent": {
+    "scope": "typescriptreact",
+    "prefix": "expc",
+    "body": [
+      "const $1: ParentComponent<ComponentProps<typeof Base$2>> = (props) => {",
+      "  const [local, others] = splitProps(props, ['class']);",
+      "",
+      "  return <Base$2 class={clsx(styles$3, local.class)} {...others} />;",
+      "};",
+      "",
+    ]
+  },
+
+  "Extend Base Component with Recipe": {
+    "scope": "typescriptreact",
+    "prefix": "excr",
+    "body": [
+      "const $1: Component<${2:recipe} & ComponentProps<typeof Base$3>> = (props) => {",
+      "  const [local, others] = splitProps(props, ['recipe']);",
+      "",
+      "  return (",
+      "    <Base$3 class={${2:recipe}(local.recipe)} {...others} />",
+      "  );",
+      "};",
+      "",
+    ]
+  },
+
+  "Extend Base ParentComponent with Recipe": {
+    "scope": "typescriptreact",
+    "prefix": "expcr",
+    "body": [
+      "import { ComponentProps, ParentComponent, splitProps } from 'solid-js';",
+      "import { $3 as Base$3 } from '$4';",
+      "",
+      "export const $1: ParentComponent<${2:recipe} & ComponentProps<typeof Base$3>> = (props) => {",
+      "  const [local, others] = splitProps(props, ['recipe']);",
+      "",
+      "  return (",
+      "    <Base$3 class={${2:recipe}(local.recipe)} {...others} />",
+      "  );",
+      "};",
+      "",
+    ]
+  },
+
+  "Import styles": {
+    "scope": "typescriptreact",
+    "prefix": "imps",
+    "body": [
+      "import * as styles from '@cubeartisan/cubeartisan$1'",
+    ],
+  },
+}

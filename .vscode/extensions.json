@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "bbenoist.Nix",
+    "christian-kohler.npm-intellisense",
+    "chrmarti.regex",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode"
+  ]
+}
