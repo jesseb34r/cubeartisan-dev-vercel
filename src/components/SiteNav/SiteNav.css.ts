@@ -59,6 +59,13 @@ export const avatarContainer = style({
   display: 'inline-flex',
   gap: vars.space[1],
   alignItems: 'center',
+  paddingBlock: vars.space['0.5'],
+  paddingInline: vars.space['1.5'],
+  borderRadius: vars.borderRadius.lg,
+
+  ':hover': {
+    backgroundColor: vars.color.neutral2,
+  },
 });
 
 export const avatarIcon = style({
