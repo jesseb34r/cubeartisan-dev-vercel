@@ -6,9 +6,9 @@ import {
   whiteA as shadow,
   greenDark as success,
   amberDark as warning,
-} from '@radix-ui/colors/src';
+} from '@radix-ui/colors';
 
-import type { ColorPaletteType } from '@cubeartisan/cubeartisan/styles/themes/colorPaletteType';
+import type { ColorPaletteType } from '../themes/colorPaletteType';
 
 export const colorPalette: ColorPaletteType = {
   neutral1: neutral.mauve1,

@@ -1,5 +1,6 @@
-import type { ColorPaletteType } from '@cubeartisan/cubeartisan/styles/themes/colorPaletteType';
-import type { TokenType } from '@cubeartisan/cubeartisan/styles/tokens';
+import type { TokenType } from '../tokens';
+
+import type { ColorPaletteType } from './colorPaletteType';
 
 export type MakeThemeProps = {
   tokens: TokenType;

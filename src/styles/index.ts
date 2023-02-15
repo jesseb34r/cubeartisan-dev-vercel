@@ -1,1 +1,1 @@
-export { themeClass, vars } from '@cubeartisan/cubeartisan/styles/themes';
+export { themeClass, vars } from './themes';

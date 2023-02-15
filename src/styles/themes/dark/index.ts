@@ -1,5 +1,6 @@
-import { colorPalette } from '@cubeartisan/cubeartisan/styles/themes/dark/colorPalette';
-import { makeTheme } from '@cubeartisan/cubeartisan/styles/themes/makeTheme';
-import { tokens } from '@cubeartisan/cubeartisan/styles/tokens';
+import { tokens } from '../../tokens';
+import { makeTheme } from '../makeTheme';
+
+import { colorPalette } from './colorPalette';
 
 export const darkTheme = makeTheme({ tokens, colorPalette });

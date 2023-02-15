@@ -1,6 +1,6 @@
 import { style } from '@vanilla-extract/css';
 
-import { vars } from '@cubeartisan/cubeartisan/styles';
+import { vars } from './styles';
 
 export const body = style({
   backgroundColor: vars.color.neutral1,
