@@ -1,6 +1,7 @@
 import { Outlet } from 'solid-start';
 
 import * as styles from './(app).css';
+import { SiteFooter } from '~/components/SiteFooter';
 import { SiteNav } from '~/components/SiteNav/SiteNav';
 
 export default function AppLayout() {
@@ -10,7 +11,7 @@ export default function AppLayout() {
         <SiteNav />
         <Outlet />
       </div>
-      {/* Footer */}
+      <SiteFooter />
     </div>
   );
 }
