@@ -49,9 +49,11 @@ export const icon = style({
   width: vars.size[6],
   height: vars.size[6],
   color: vars.color.neutral11,
+  borderRadius: vars.borderRadius.md,
 
   ':hover': {
     color: vars.color.neutral12,
+    backgroundColor: vars.color.neutral5,
   },
 });
 
