@@ -41,7 +41,7 @@ export const NavSidebar: Component<{ open: boolean; setClosed: () => void }> = (
       </li>
       <li class={styles.navSidebarLink}>Playtest</li>
       <li class={styles.navSidebarLink}>Compare</li>
-      <li class={styles.navSidebarLink}>Analysis</li>
+      <li class={styles.navSidebarLink}>Analytics</li>
     </ul>
   </nav>
 );
