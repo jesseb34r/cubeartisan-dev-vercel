@@ -7,7 +7,7 @@ import {
   whiteA as shadowInverse,
   green as success,
   amber as warning,
-} from '@radix-ui/colors/src';
+} from '@radix-ui/colors';
 
 import type { ColorPaletteType } from '@cubeartisan/cubeartisan/styles/themes/colorPaletteType';
 

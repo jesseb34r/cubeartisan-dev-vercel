@@ -1,4 +1,4 @@
-import { blackA, whiteA } from '@radix-ui/colors/src';
+import { blackA, whiteA } from '@radix-ui/colors';
 
 const typography = {
   fontFamily: {
