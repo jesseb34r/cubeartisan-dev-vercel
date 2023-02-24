@@ -11,4 +11,13 @@ export const themeClass = style({
       vars: assignVars(vars, darkTheme),
     },
   },
+
+  selectors: {
+    "&[data-theme='light']": {
+      vars: assignVars(vars, lightTheme),
+    },
+    "&[data-theme='dark']": {
+      vars: assignVars(vars, darkTheme),
+    },
+  },
 });

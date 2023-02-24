@@ -79,3 +79,60 @@ export const searchIconContainer = style({
     },
   },
 });
+
+export const darkmodeToggleRoot = style({
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'space-between',
+  gap: vars.space['2.5'],
+});
+
+export const darkmodeToggleControl = style({
+  justifySelf: 'flex-end',
+  display: 'inline-flex',
+  alignItems: 'center',
+  height: vars.space[4],
+  width: vars.space[8],
+  borderRadius: vars.borderRadius.xl,
+  backgroundColor: vars.color.neutral3,
+  outline: `solid ${vars.borderSize.standard} ${vars.color.neutral7}`,
+  cursor: 'pointer',
+
+  selectors: {
+    '&[data-hover]': {
+      backgroundColor: vars.color.neutral4,
+      outline: `solid ${vars.borderSize.standard} ${vars.color.neutral8}`,
+    },
+    '&[data-checked]': {
+      outline: 'none',
+      backgroundColor: vars.color.primary7,
+    },
+    '&[data-focus]': {
+      outline: `solid ${vars.borderSize['focus-ring']} ${vars.color.neutral7}`,
+    },
+  },
+});
+
+export const darkmodeToggleThumb = style({
+  height: vars.space[7],
+  width: vars.space[7],
+  borderRadius: vars.borderRadius.full,
+  transition: '200ms ease transform',
+  color: vars.color.primary12,
+  backgroundColor: vars.color.primary6,
+  display: 'grid',
+  placeItems: 'center',
+  transform: 'translateX(-20%)',
+
+  selectors: {
+    '&[data-checked]': {
+      transform: `translateX(${vars.space[4]})`,
+      backgroundColor: vars.color.primary4,
+    },
+  },
+});
+
+export const darkmodeToggleIcon = style({
+  height: vars.space[5],
+  width: vars.space[5],
+});
