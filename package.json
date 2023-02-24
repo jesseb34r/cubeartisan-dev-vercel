@@ -3,7 +3,7 @@
   "packageManager": "pnpm@7.16.1",
   "scripts": {
     "dev": "solid-start dev",
-    "build": "solid-start build &&  gawk -i inplace '{sub(/string_decoder\\//, \"string_decoder\", $0)}1' dist/server.js",
+    "build": "solid-start build",
     "start": "solid-start start",
     "lint": "sh -c 'eslint_d `pnpm run --silent list-files`'",
     "lint-fix": "sh -c 'eslint_d --fix `pnpm run --silent list-files`'",
