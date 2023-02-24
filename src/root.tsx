@@ -1,11 +1,10 @@
 // @refresh reload
 import { Suspense } from 'solid-js';
 import { Body, ErrorBoundary, FileRoutes, Head, Html, Link, Meta, Routes, Scripts, Title } from 'solid-start';
-import './root.css';
 
-import './styles/globalReset.css';
-import * as styles from './root.css';
-import { themeClass } from './styles';
+import '@cubeartisan/cubeartisan/styles/globalReset.css';
+import * as styles from '@cubeartisan/cubeartisan/root.css';
+import { themeClass } from '@cubeartisan/cubeartisan/styles';
 
 export default function Root() {
   return (
@@ -28,13 +27,13 @@ export default function Root() {
         <Link rel="shortcut icon" href="/images/icons/favicon.ico" />
       </Head>
       <Body class={`${styles.body} ${themeClass}`}>
-        <Suspense>
-          <ErrorBoundary>
+        <ErrorBoundary>
+          <Suspense>
             <Routes>
               <FileRoutes />
             </Routes>
-          </ErrorBoundary>
-        </Suspense>
+          </Suspense>
+        </ErrorBoundary>
         <Scripts />
       </Body>
     </Html>

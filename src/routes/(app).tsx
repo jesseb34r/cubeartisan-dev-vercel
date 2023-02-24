@@ -1,17 +1,16 @@
 import { Outlet } from 'solid-start';
 
-import * as styles from './(app).css';
-import { SiteFooter } from '~/components/SiteFooter';
-import { SiteNav } from '~/components/SiteNav/SiteNav';
+import { SiteFooter } from '@cubeartisan/cubeartisan/components/site/SiteFooter';
+import { SiteNavbar } from '@cubeartisan/cubeartisan/components/site/SiteNavbar';
+import * as styles from '@cubeartisan/cubeartisan/routes/(app).css';
 
-export default function AppLayout() {
-  return (
+const AppLayout = () => (
+  <>
     <div class={styles.appContainer}>
-      <div class={styles.appBody}>
-        <SiteNav />
-        <Outlet />
-      </div>
-      <SiteFooter />
+      <SiteNavbar />
+      <Outlet />
     </div>
-  );
-}
+    <SiteFooter />
+  </>
+);
+export default AppLayout;

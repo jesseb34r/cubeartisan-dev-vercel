@@ -1,4 +1,4 @@
-import { blackA, whiteA } from '@radix-ui/colors';
+import { blackA, whiteA } from '@radix-ui/colors/src';
 
 const typography = {
   fontFamily: {
@@ -167,10 +167,10 @@ const size = {
   screenHeight: '100vh',
   maxContent: 'max-content',
   minContent: 'min-content',
-  'content-60': `clamp(${screens.mobile}, 60%, ${screens.ultrawide})`,
-  'content-70': `clamp(${screens.mobile}, 70%, ${screens.ultrawide})`,
-  'content-80': `clamp(${screens.mobile}, 80%, ${screens.ultrawide})`,
-  'content-90': `clamp(${screens.mobile}, 90%, ${screens.ultrawide})`,
+  'content-60': `clamp(${screens.mobile}, 60%, ${screens.laptop})`,
+  'content-70': `clamp(${screens.mobile}, 70%, ${screens.laptop})`,
+  'content-80': `clamp(${screens.mobile}, 80%, ${screens.laptop})`,
+  'content-90': `clamp(${screens.mobile}, 90%, ${screens.laptop})`,
 };
 
 const relativeSize = {
