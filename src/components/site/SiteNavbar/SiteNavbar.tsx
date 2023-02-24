@@ -26,7 +26,7 @@ const SiteNavbar = () => {
         <ul class={styles.navSection}>
           {/* CubeArtisan Logo */}
           <li class={styles.navItemContainer}>
-            <Link.Root as={A} href="/test" class={styles.navItem}>
+            <Link.Root as={A} href="/" class={styles.navItem}>
               <img src="/images/stacked-logo.svg" class={styles.siteLogo} />
             </Link.Root>
           </li>
